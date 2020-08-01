@@ -1,0 +1,138 @@
+:root {
+	--mainOrange: #f58529;
+}
+.txt-color {
+	color: var(--mainOrange);
+}
+
+.footer {
+	color: #fff;
+	background: #444;
+	padding: 2rem;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.footer > * {
+	flex: 1 100%;
+}
+.l-footer {
+	margin-right: 1.25rem;
+	margin-bottom: 2rem;
+}
+h2 {
+	font-weight: 900;
+	font-size: 1rem;
+}
+.footer ul {
+	list-style: none;
+	padding-left: 0;
+}
+.footer li {
+	line-height: 2rem;
+}
+.footer a {
+	text-decoration: none;
+}
+.r-footer {
+	display: flex;
+	flex-flow: row wrap;
+}
+.r-footer > * {
+	flex: 1 50%;
+	margin-right: 1.25em;
+}
+.box a {
+	text-decoration: none;
+	color: var(--mainOrange);
+}
+.box li {
+	color: var(--mainOrange);
+}
+
+.h-box a {
+	column-count: 2;
+	column-gap: 1.25em;
+}
+.b-footer {
+	text-align: center;
+	color: #fff;
+	padding: 50px;
+}
+@media screen and (min-width: 600px) {
+	.r-footer > * {
+		flex: 1;
+	}
+	.feautures {
+		flex-grow: 2;
+		color: var(--mainOrange);
+	}
+	.l-footer {
+		flex: 1 0px;
+	}
+	.r-footer {
+		flex: 2 0px;
+	}
+}
+
+.icons ul {
+	display: flex;
+	justify-content: space-between;
+	width: 300px;
+	margin: auto;
+	padding: 25px;
+	transition: 0.6s;
+}
+
+.icons ul li {
+	list-style: none;
+	margin: 0 15px;
+}
+.icons ul li .fa {
+	font-size: 30px;
+	line-height: 60px;
+	transition: 0.6s;
+	color: #f58529;
+}
+.icons ul li a {
+	position: absolute;
+	display: block;
+	width: 60px;
+	height: 60px;
+	border-radius: 7%;
+	background: #fff;
+	text-align: center;
+	transition: 0.6s;
+	box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
+}
+
+.icons ul li .fa:hover {
+	color: #f58529;
+}
+.icons ul li a:hover {
+	transform: translate(0, -10px);
+}
+
+.icons ul li:nth-child(1) a:hover {
+	background: #c4302b;
+}
+.icons ul li:nth-child(2) a:hover {
+	background-image: linear-gradient(
+		#405de6,
+		#5851db,
+		#833ab4,
+		#c13584,
+		#e1306c,
+		#fd1d1d,
+		#f56040,
+		#f77737,
+		#fcaf45,
+		#ffdc80
+	);
+}
+.icons ul li:nth-child(3) a:hover {
+	background: #d50f25;
+}
+.icons ul li:nth-child(4) a:hover {
+	background: #3b5999;
+}
